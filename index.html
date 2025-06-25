@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome CDN untuk icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ 
+  <title>Fruit Drink UI</title>
+</head>
+<div>
+  <div class="header">
+    <h2>Fruit Drinks</h2>
+    <div class="nav">
+      <!-- <a href="">Home</a>
+      <a href="">Menu</a> -->
+      <div class="search-box">
+        <input type="text" placeholder="Search..." />
+        <button><i class="fas fa-search"></i></button>
+      </div>
+      <a href="#" class="cart-icon">
+        <i class="fas fa-shopping-cart"></i>
+      </a>
+      <a href="">Login</a>
+      <a href="">Register</a>
+    </div>
+  </div>
+
+  <div class="hero">
+    <section>
+      <h1>Cool & Fresh Fruit Drinks</h1>
+      <p>Delicious taste from the best fruit combinations</p>
+      <button>Explore Now</button>
+    </section>
+  </div>
+
+<section class="card-slider">
+  <button class="scroll-btn left">&#10094;</button>
+
+  <div class="cards" id="cardContainer">
+    <div class="card">
+      <img src="images/fruit-drink1.jpg" alt="Drink 1">
+      <h3>Berry Burst</h3>
+      <p>Mixed berries and citrus</p>
+      <button>Order Now</button>
+    </div>
+    <div class="card">
+      <img src="images/fruit-drink2.jpg" alt="Drink 2">
+      <h3>Pink Lemonade</h3>
+      <p>Lemon and berry fusion</p>
+      <button>Order Now</button>
+    </div>
+    <div class="card">
+      <img src="images/fruit-drink3.jpg" alt="Drink 3">
+      <h3>Tropical Fizz</h3>
+      <p>Orange, pineapple, fizz</p>
+      <button>Order Now</button>
+    </div>
+    <div class="card">
+      <img src="images/fruit-drink4.jpg" alt="Drink 4">
+      <h3>Citrus Twist</h3>
+      <p>Refreshing citrus blend</p>
+      <button>Order Now</button>
+    </div>
+        <div class="card">
+      <img src="images/fruit-drink5.jpg" alt="Drink 4">
+      <h3>Citrus Twist</h3>
+      <p>Refreshing citrus blend</p>
+      <button>Order Now</button>
+    </div>
+        <div class="card">
+      <img src="images/fruit-drink6.jpg" alt="Drink 4">
+      <h3>Blue Ocean</h3>
+      <p>Refreshing citrus blend</p>
+      <button>Order Now</button>
+    </div>
+        <div class="card">
+      <img src="images/fruit-drink7.jpg" alt="Drink 4">
+      <h3>Citrus Twist</h3>
+      <p>Refreshing citrus blend</p>
+      <button>Order Now</button>
+    </div>
+  </div>
+
+  <button class="scroll-btn right">&#10095;</button>
+</section>
+
+
+  <footer>
+    <p>&copy; 2025 Fruit Drinks Co. All rights reserved.</p>
+    <button style="margin-top:1rem; background-color:#c0392b; padding: 0.5rem 1rem; border: none; color: #fff;">Contact Us</button>
+  </footer>
+
+  <script>
+    // Placeholder for any JS interactivity
+    console.log("Page Loaded");
+
+    const container = document.getElementById('cardContainer');
+      const scrollAmount = 260; // width of one card + gap
+
+      document.querySelector('.scroll-btn.left').addEventListener('click', () => {
+        container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+      });
+
+      document.querySelector('.scroll-btn.right').addEventListener('click', () => {
+        container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+      });
+  </script>
+</div>
+</html>
